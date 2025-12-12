@@ -1,6 +1,6 @@
 | Dataset                                                      | Train   | Test   | Dimensions(Entity) | Anomalies |
 | ------------------------------------------------------------ | ------- | ------ | ------------------ | ------------- |
-| [NAB](#Numenta异常基准(NAB))                    |         |        |                    | 0.92          |
+| [NAB](#Numenta异常基准NAB)                    |         |        |                    | 0.92          |
 | [UCR](#TSAD(UCR))                |         |        |                    | 1.88          |
 | [SMAP](#土壤水分主动被动卫星Dataset(SMAP)) | 135183  | 427617 | 25 (55)            | 13.13         |
 | [MSL](#火星科学实验室好奇号漫游车Dataset(MSL)) | 58317   | 73729  | 55 (3)             | 10.72         |
@@ -15,7 +15,7 @@
 - Repo：https://zenodo.org/records/3549604
 - 由复杂分布式系统的分布式跟踪、应用程序日志和指标组成。该数据集专为人工智能操作而构建，包括自动异常检测、根本原因分析和修复。
 
-### Numenta异常基准(NAB)
+### Numenta异常基准NAB
 - Repo：https://github.com/numenta/NAB/tree/master/data ，label在同级文件夹下
 - 仓库包含多个数据集
 
