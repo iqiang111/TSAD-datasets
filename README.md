@@ -1,21 +1,21 @@
 | Dataset                                                      | Train   | Test   | Dimensions(Entity) | Anomalies |
 | ------------------------------------------------------------ | ------- | ------ | ------------------ | ------------- |
-| [NAB](#Numenta Anomaly Benchmark (NAB))                      |         |        |                    | 0.92          |
-| [UCR](#UCR Time Series Anomaly Archive (UCR))                |         |        |                    | 1.88          |
-| [SMAP](#Mars Science Laboratory Curiosity Rover Dataset  (MSL)) | 135183  | 427617 | 25 (55)            | 13.13         |
-| [MSL](#Mars Science Laboratory Curiosity Rover Dataset  (MSL)) | 58317   | 73729  | 55 (3)             | 10.72         |
-| [SWaT](#Secure Water Treatment (SWaT) Dataset)               | 496800  | 449919 | 51 (1)             | 11.98         |
-| [WADI](#Water Distribution (WADI) Dataset)                   | 1048571 | 172801 | 123 (1)            | 5.99          |
-| [SMD](#Server Machine Dataset (SMD))                         | 708405  | 708420 | 38 (4)             | 4.16          |
+| [NAB](#Numenta异常基准(NAB))                    |         |        |                    | 0.92          |
+| [UCR](#TSAD(UCR))                |         |        |                    | 1.88          |
+| [SMAP](#土壤水分主动被动卫星Dataset(SMAP)) | 135183  | 427617 | 25 (55)            | 13.13         |
+| [MSL](#火星科学实验室好奇号漫游车Dataset(MSL)) | 58317   | 73729  | 55 (3)             | 10.72         |
+| [SWaT](#安全水处理(SWaT)Dataset)               | 496800  | 449919 | 51 (1)             | 11.98         |
+| [WADI](#水分配(WADI)Dataset)                   | 1048571 | 172801 | 123 (1)            | 5.99          |
+| [SMD](#服务器Dataset(SMD))                         | 708405  | 708420 | 38 (4)             | 4.16          |
 | [MSDS](#多源分布式系统（MSDS）数据集)                        | 146430  | 146430 | 10 (1)             | 5.37          |
-| [PSM](#Pooled Server Metric (PSM) Dataset)                   |         |        |                    |               |
-| [AIOps](#Artificial Intelligence for IT Operations (AIOps) Challenge Datasets) |         |        |                    |               |
+| [PSM](#池化服务器指标Dataset(PSM))                   |         |        |                    |               |
+| [AIOps](#智能运维挑战赛Dataset(AIOps)) |         |        |                    |               |
 
 ### 多源分布式系统（MSDS）数据集
 - Repo：https://zenodo.org/records/3549604
 - 由复杂分布式系统的分布式跟踪、应用程序日志和指标组成。该数据集专为人工智能操作而构建，包括自动异常检测、根本原因分析和修复。
 
-### Numenta Anomaly Benchmark (NAB)
+### Numenta异常基准(NAB)
 - Repo：https://github.com/numenta/NAB/tree/master/data ，label在同级文件夹下
 - 仓库包含多个数据集
 
@@ -23,7 +23,7 @@
 - Repo：https://github.com/imperial-qore/TranAD/tree/main/data/MBA
 - Description ：MBA是四名患者心电图记录的集合，包含两种不同类型异常（室上性收缩或早搏）的多个实例 
 
-### Secure Water Treatment (SWaT) Dataset
+### 安全水处理(SWaT)Dataset
 - Repo：填表申请，等待回复邮件https://itrust.sutd.edu.sg/itrust-labs_datasets/dataset_info/#swat
 - Direct access：https://drive.google.com/drive/folders/1KOQvV2nR6Y9tIkB4XELHA1CaV1F8LrZ6
 - Description：SWaT数据集是生产过滤水的真实工业水处理厂的缩小版。所采集的数据集包含11天连续的运行数据，其中正常运行数据集7天，攻击场景数据集4天，时间间隔1秒。
@@ -32,12 +32,12 @@
 - 使用版本：normal有v0和v1两个版本，v1是剔除掉无用的前30分钟数据，故采用normalv1和attackv0
 - 原数据中label是normal和attack，统一替换为0和1
 
-### Water Distribution (WADI) Dataset
+### 水分配(WADI)Dataset
 - Repo：填表申请，等待回复邮件https://itrust.sutd.edu.sg/itrust-labs_datasets/dataset_info/#wadi
 - Description：该数据集是从WADI测试平台收集的，它是SWaT测试平台的扩展。它包含连续运行16天，其中正常运行收集14天，攻击场景收集2天，时间间隔1秒。
 - 使用版本：2019年版本测试集有标签，故使用2019年版本
 
-### Server Machine Dataset (SMD)
+### 服务器Dataset(SMD)
 - Repo： https://github.com/NetManAIOps/OmniAnomaly
 - THU合并原始数据后的数据集，但不知道是如何处理的？：https://drive.google.com/drive/folders/1KOQvV2nR6Y9tIkB4XELHA1CaV1F8LrZ6 （包含MSL SMAP PSM SMD SWaT 5个数据集）
 - Paper：KDD 2019  [Robust Anomaly Detection for Multivariate Time Series through Stochastic Recurrent Neural Network](https://dl.acm.org/doi/10.1145/3292500.3330672).
@@ -58,8 +58,8 @@
   | MSL          | 27                 | 55                   | 58317             | 73729            | 10.72            |
   | SMD          | 28                 | 38                   | 708405            | 708420           | 4.16             |
 
-### Soil Moisture Active Passive Satellite Dataset (SMAP) 
-### Mars Science Laboratory Curiosity Rover Dataset  (MSL) 
+### 土壤水分主动被动卫星Dataset(SMAP) 
+### 火星科学实验室好奇号漫游车Dataset(MSL) 
 - Repo：https://www.kaggle.com/datasets/patrickfleith/nasa-anomaly-detection-dataset-smap-msl
 - TranAD包含数据和数据预处理：https://github.com/imperial-qore/TranAD/tree/main/data/SMAP_MSL
 - Paper：KDD 2018 paper [Detecting Spacecraft Anomalies Using LSTMs and Nonparametric Dynamic Thresholding](https://arxiv.org/abs/1802.04431)
@@ -79,15 +79,15 @@
 - Paper：https://arxiv.org/pdf/1811.08055
 - TanAD中包含属于预处理步骤，训练集和测试集各10000条，通道级异常标签
 
-### UCR Time Series Anomaly Archive (UCR)
+### TSAD(UCR)
 - Repo：https://www.cs.ucr.edu/~eamonn/time_series_data_2018/
 - Papers：[The UEA multivariate time series classification archive, 2018 ](https://arxiv.org/abs/1811.00075) and [Current Time Series Anomaly Detection Benchmarks are Flawed and are Creating the Illusion of Progress](https://arxiv.org/abs/2009.13807) 
 
-### Artificial Intelligence for IT Operations (AIOps) Challenge Datasets
+### 智能运维挑战赛Dataset(AIOps)
 - Datasets maintained by the [Netman Lab](https://netman.aiops.org/) at Tsinghua University, their group's GitHub profile can be found [here](https://github.com/NetManAIOps).
 - The KPI dataset from their 2018 challenge is [here](https://github.com/NetManAIOps/KPI-Anomaly-Detection), and the 2020 data is [here](https://github.com/NetManAIOps/AIOps-Challenge-2020-Data).
 
-### Pooled Server Metric (PSM) Dataset
+### 池化服务器指标Dataset(PSM)
 - Repo：https://github.com/eBay/RANSynCoders/tree/main/data
 - Description：从 eBay 的多个应用程序服务器节点内部收集的，具有 26 个维度
 
