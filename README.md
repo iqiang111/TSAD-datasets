@@ -8,7 +8,7 @@
 | [WADI](#水分配Dataset_WADI)                   | 1048571 | 172801 | 123 (1)            | 5.99          |
 | [SMD](#服务器Dataset_SMD)                         | 708405  | 708420 | 38 (4)             | 4.16          |
 | [MSDS](#多源分布式系统Dataset_MSDS)                        | 146430  | 146430 | 10 (1)             | 5.37          |
-| [PSM](#Pooled Server Metric Dataset_PSM)                   |         |        |                    |               |
+| [PSM](#池化服务器指标Dataset_PSM)                   |         |        |                    |               |
 | [AIOps](#智能运维挑战赛Dataset_AIOps) |         |        |                    |               |
 
 ### 多源分布式系统Dataset_MSDS
@@ -87,7 +87,7 @@
 - Datasets maintained by the [Netman Lab](https://netman.aiops.org/) at Tsinghua University, their group's GitHub profile can be found [here](https://github.com/NetManAIOps).
 - The KPI dataset from their 2018 challenge is [here](https://github.com/NetManAIOps/KPI-Anomaly-Detection), and the 2020 data is [here](https://github.com/NetManAIOps/AIOps-Challenge-2020-Data).
 
-### Pooled Server Metric Dataset_PSM
+### 池化服务器指标Dataset_PSM
 - Repo：https://github.com/eBay/RANSynCoders/tree/main/data
 - Description：从 eBay 的多个应用程序服务器节点内部收集的，具有 26 个维度
 
